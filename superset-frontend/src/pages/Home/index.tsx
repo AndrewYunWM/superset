@@ -396,6 +396,9 @@ function Welcome({ user, addDangerToast }: WelcomeProps) {
                   />
                 )}
               </Collapse.Panel>
+
+              <!-- Hide Menu ( Charts & SavedQueries ) -->
+              <!--
               <Collapse.Panel header={t('Charts')} key="3">
                 {!chartData || isRecentActivityLoading ? (
                   <LoadingCards cover={checked} />
@@ -423,6 +426,7 @@ function Welcome({ user, addDangerToast }: WelcomeProps) {
                     />
                   )}
                 </Collapse.Panel>
+              -->
               )}
             </Collapse>
           </>
