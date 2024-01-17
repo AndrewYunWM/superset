@@ -396,37 +396,9 @@ function Welcome({ user, addDangerToast }: WelcomeProps) {
                   />
                 )}
               </Collapse.Panel>
+              
+              <!-- Delete Menu ( Charts & SavedQueries ) 24.01.17 -->
 
-              <!-- Hide Menu ( Charts & SavedQueries ) -->
-              <!--
-              <Collapse.Panel header={t('Charts')} key="3">
-                {!chartData || isRecentActivityLoading ? (
-                  <LoadingCards cover={checked} />
-                ) : (
-                  <ChartTable
-                    showThumbnails={checked}
-                    user={user}
-                    mine={chartData}
-                    otherTabData={activityData?.[TableTab.Other]}
-                    otherTabFilters={otherTabFilters}
-                    otherTabTitle={otherTabTitle}
-                  />
-                )}
-              </Collapse.Panel>
-              {canReadSavedQueries && (
-                <Collapse.Panel header={t('Saved queries')} key="4">
-                  {!queryData ? (
-                    <LoadingCards cover={checked} />
-                  ) : (
-                    <SavedQueries
-                      showThumbnails={checked}
-                      user={user}
-                      mine={queryData}
-                      featureFlag={isThumbnailsEnabled}
-                    />
-                  )}
-                </Collapse.Panel>
-              -->
               )}
             </Collapse>
           </>
